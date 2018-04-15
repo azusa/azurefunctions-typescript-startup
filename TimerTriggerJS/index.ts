@@ -1,5 +1,5 @@
-module.exports = function (context, myTimer) {
-    var timeStamp = new Date().toISOString();
+export async function run (context: any, myTimer: any) {
+    const timeStamp = new Date().toISOString();
     
     if(myTimer.isPastDue)
     {
@@ -7,5 +7,5 @@ module.exports = function (context, myTimer) {
     }
     context.log('JavaScript timer trigger function ran!', timeStamp);   
     
-    context.done();
-};
+    context.done();    
+  };
