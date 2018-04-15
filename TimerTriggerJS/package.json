@@ -1,0 +1,15 @@
+{
+  "name": "techbookfest-circle-bot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "tslint": "^5.9.1",
+    "tslint-config-prettier": "^1.10.0",
+    "tslint-plugin-prettier": "^1.3.0",
+    "typescript": "^2.8.1"
+  },
+  "scripts": {
+    "postinstall": "npm install -g typescript && tsc"
+  }
+}
